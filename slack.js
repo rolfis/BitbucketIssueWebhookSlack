@@ -83,7 +83,7 @@ function getParsedTitle(parsedBody, type) {
 
 function getParsedLink(parsedBody, type) {
     return (
-        parsedBody.issue.links.self.href !== '' ? parsedBody.issue.links.self.href : ''
+        parsedBody.issue.links.self.html !== '' ? parsedBody.issue.links.self.html : ''
     );
 }
 
