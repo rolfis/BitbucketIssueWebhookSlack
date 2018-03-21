@@ -47,8 +47,8 @@ function convertToSlackMessage(body, channel, type) {
         username: 'Bitbucket Issues',
         icon_emoji: ':ledger:',
         text: getParsedTitle(parsedBody, type) +
-            " created by " + getParsedUsername(parsedBody, type) +
-            " with " + getParsedPriority(parsedBody, type) +
+            " | " + getParsedUsername(parsedBody, type) +
+            " | " + getParsedPriority(parsedBody, type) +
             " priority. <" + getParsedLink(parsedBody, type) + "|Details>",
         channel: channel || process.env.slackchannel
     });
